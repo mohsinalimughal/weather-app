@@ -7,7 +7,7 @@ const result = document.querySelector(".result")
 btn.addEventListener("click", async ()=>{
     console.log("btn clicked")
     console.log(cityname.value)
-    fetch(`http://api.weatherapi.com/v1/current.json?key=1a2d648d4d92465cadb123919241911&q=${cityname.value}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=1a2d648d4d92465cadb123919241911&q=${cityname.value}`)
 //    const data = await responce.json()
 //     console.log(data)
     .then(res=>res.json())
